@@ -6,20 +6,44 @@
   <style>
     body {
       margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       height: 100vh;
-      background: #f0f0f0;
+      text-align: center;
+      color: #fff;
     }
     img {
       max-width: 100%;
       height: auto;
+      border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .text-overlay {
+      position: absolute;
+      font-size: 5em;
+      font-weight: bold;
+      color: white;
+      z-index: 10;
+    }
+    .content-wrapper {
+      position: relative;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <img src="https://images4.alphacoders.com/133/1338111.png" alt="HER">
+
+  <!-- Content Wrapper with Text and Image -->
+  <div class="content-wrapper">
+    <!-- Huge White Text -->
+    <div class="text-overlay">HER</div>
+    <!-- Image -->
+    <img src="https://images4.alphacoders.com/133/1338111.png" alt="Showcased Image">
+  </div>
+
 </body>
 </html>
